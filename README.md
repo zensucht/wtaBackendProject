@@ -63,21 +63,21 @@ The following endpoints are available on http://localhost:8080
 I recommend using [Postman](https://www.getpostman.com/) for accessing these endpoints.
 
 1. /api/assets
-..+ GET request that lists all available assets
+* GET request that lists all available assets
 2. /api/asset
-..+ POST request that creates an asset when supplied a uri string and a name string
+* POST request that creates an asset when supplied a uri string and a name string
 3. /api/asset/ASSETID
-..+ GET request retrieves a single asset
-..+ PATCH request modifies asset specified by ASSETID when provided uri and/or name parameters
-..+ DELETE request marks an asset for deletion
-..+ PURGE request that deletes an asset (regardless of whether or not it has been marked for deletion)
+* GET request retrieves a single asset
+* PATCH request modifies asset specified by ASSETID when provided uri and/or name parameters
+* DELETE request marks an asset for deletion
+* PURGE request that deletes an asset (regardless of whether or not it has been marked for deletion)
 4. /api/asset/ASSETID/note
-..+ POST request that creates a note and associates it with the specified ASSETID
+* POST request that creates a note and associates it with the specified ASSETID
 5. /api/asset/ASSETID/note/NOTEID
-..+ PATCH request that modifies the note specified by NOTEID and associated with ASSETID when supplied a note parameter
+* PATCH request that modifies the note specified by NOTEID and associated with ASSETID when supplied a note parameter
 6. /api/note/NOTEID
-..+ GET request retrieves the note associated with NOTEID
-..+ PATCH request modifies the note associated with NOTEID when supplied a note parameter
+* GET request retrieves the note associated with NOTEID
+* PATCH request modifies the note associated with NOTEID when supplied a note parameter
 
 ### Load testing
 
